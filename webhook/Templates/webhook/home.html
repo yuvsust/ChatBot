@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load staticfiles %}
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Home</title>
 </head>
+<style>
+    .row {
+        padding-top: 80px;
+    }
+</style>
 <body>
-<div class="" >
-    <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/b667fe1b-10b2-4b81-ba92-110757f7f75a"></iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row" style="padding-left: 200px"><img class="" src={% static 'logo.jpg' %} width="230px" height="175px"></div>
+                    <h2><strong>Shahjalal University of Science and Technology</strong></h2>
+                    <h4> Hello I am SUST-BOT. Feel free to ask any query... </h4>
+                </div>
+                <div class="col-sm-4">
+                        <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/b667fe1b-10b2-4b81-ba92-110757f7f75a"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+    
 </div>
 </body>
 </html>

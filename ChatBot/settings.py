@@ -26,7 +26,7 @@ SECRET_KEY = '!$8jc%x3n+j!eqha1wud@-y-v2$rm@b_2idxko5c2-_p5kf2@u'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'd18d5229.ngrok.io',
+    '3b2628e5.ngrok.io',
     '127.0.0.1',
 ]
 
@@ -120,5 +120,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'webhook/static/')
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
