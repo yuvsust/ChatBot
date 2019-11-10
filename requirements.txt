@@ -1,0 +1,2 @@
+Django==2.2
+As we are going to use Dialogflow webhook response library to generate a JSON response. Download this library and put it in /ChatBot-Project/library/df_response_lib.py directory.
